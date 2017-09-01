@@ -1,14 +1,14 @@
 {
-  "name": "myneon-syntax",
+  "name": "blue-neon-syntax",
   "theme": "syntax",
-  "version": "0.1.1",
-  "description": "Nice contrast theme in blue tones",
+  "version": "1.0.1",
+  "description": "Blue tones theme with neon lights. Made with text-shadow css property. Enjoy it now!",
   "keywords": [
-    "Myneon Syntax",
+    "Blue Neon Syntax",
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/MaxShcherbakov/myneon-syntax",
+  "repository": "https://github.com/MaxShcherbakov/blue-neon-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

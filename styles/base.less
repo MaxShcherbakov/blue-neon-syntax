@@ -121,6 +121,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   &.syntax--parameter.syntax--function {
     color: @syntax-text-color;
   }
+
 }
 
 .syntax--invalid.syntax--illegal {
@@ -130,7 +131,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 .syntax--string {
   color: @yellow;
-
+  text-shadow: 0 0 2px @yellow-shadow;
 
   &.syntax--regexp {
     color: @cyan;
@@ -143,12 +144,18 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   &.syntax--other.syntax--link {
     color: @red;
   }
+
+  .syntax--variable {
+    text-shadow: 0 0 2px @blue-shadow;
+  }
 }
+
 .syntax--source.syntax--js{
   color: @pink;
 }
 .syntax--numeric.syntax--js{
   color: @green;
+  text-shadow: 0 0 2px @green-shadow;
 }
 .syntax--punctuation {
   &.syntax--definition {
@@ -157,12 +164,12 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
     }
 
     &.syntax--string,
-    &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
       color: @syntax-text-color;
     }
 
+    &.syntax--variable,
     &.syntax--heading,
     &.syntax--identity {
       color: @blue;
