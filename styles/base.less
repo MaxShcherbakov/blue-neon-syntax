@@ -93,7 +93,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 .syntax--constant {
   color: @orange;
-  text-shadow: 0 0 2px @orange-shadow;
+  text-shadow: 0 0 5px @orange-shadow;
 
   &.syntax--character.syntax--escape {
     color: @light-orange;
@@ -114,7 +114,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 .syntax--variable {
   color: @blue;
-  text-shadow: 0 0 2px @blue-lightshadow;
+  text-shadow: 0 0 5px @blue-lightshadow;
   &.syntax--interpolation {
     color: darken(@red, 10%);
   }
@@ -132,7 +132,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 .syntax--string {
   color: @yellow;
-  text-shadow: 0 0 2px @yellow-shadow;
+  text-shadow: 0 0 5px @yellow-shadow;
 
   &.syntax--regexp {
     color: @cyan;
@@ -147,16 +147,28 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   }
 
   .syntax--variable {
-    text-shadow: 0 0 2px @blue-shadow;
+    text-shadow: 0 0 5px @blue-shadow;
+  }
+
+  .syntax--php{
+    text-shadow: none;
   }
 }
+.syntax--php{
+  .syntax--support{
+    &.syntax--function{
+      color:@very-light-gray;
+      ext-shadow: 0 0 5px @blue-shadow;
+    }
+  }
 
+}
 .syntax--source.syntax--js{
   color: @pink;
 }
 .syntax--numeric.syntax--js{
   color: @green;
-  text-shadow: 0 0 2px @green-shadow;
+  text-shadow: 0 0 5px @green-shadow;
 }
 .syntax--punctuation {
   &.syntax--definition {
@@ -200,6 +212,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
   &.syntax--function  {
     color: @blue;
+    text-shadow: none;
 
     &.syntax--any-method {
       color: @blue;
@@ -241,13 +254,6 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 .syntax--meta {
-  &.syntax--class {
-    color: @light-orange;
-  }
-
-  &.syntax--link {
-    color: @orange;
-  }
 
   &.syntax--require {
     color: @blue;
